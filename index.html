@@ -49,31 +49,117 @@
   <section class="what-we-bring">
     <div class="what-we-bring-inner" >
       <h2>What We Bring</h2>
-      <div class="labels">
-      <div class="label">Clarified Vision</div>
-      <div class="label">High Performance</div>
-      <div class="label">Security</div>
-      <div class="label">Better Strategy</div>
-    </div>
+      <div class="bring">
+        <div class="bring-title">
+          <h4>Clarified Vision</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <div class="bring-title">
+          <h4>High Performance</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <div class="bring-title">
+          <h4>Security</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <div class="bring-title">
+          <h4>Better Strategy</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+      </div>
+      <a href="#services" class="btn-secondary">Learn More</a>
     </div>
     
   </section>
 
   <section class="services" id="services">
-    <h2>Our Services</h2>
-    <div class="services-wrapper">
-      <div class="services-image">
-        <img id="service-img" src="assets/images/service_1.jpg" alt="Service Preview" />
-      </div>
-      <div class="services-list">
-        <button data-img="assets/images/service_1.jpg">Service 1</button>
-        <button data-img="images/service2.jpg">Service 2</button>
-        <button data-img="images/service3.jpg">Service 3</button>
-        <button data-img="images/service4.jpg">Service 4</button>
-        <button data-img="images/service5.jpg">Service 5</button>
+    <div class="services-inner" >
+      <h2>Our Services</h2>
+      <div class="services-wrapper">
+        <div class="services-image">
+          <img id="service-img" src="assets/images/service_1.jpg" alt="Service Preview" />
+          <a href="#services" class="services-btn">Learn More</a>
+        </div>
+        <div class="services-list">
+          <button data-img="assets/images/service_1.jpg">
+            <h4>Service 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </button>
+          <button data-img="images/service2.jpg">
+            <h4>Service 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </button>
+          <button data-img="images/service2.jpg">
+            <h4>Service 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </button>
+          <button data-img="images/service2.jpg">
+            <h4>Service 4</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </button>
+          <button data-img="images/service2.jpg">
+            <h4>Service 5</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </button>
+        </div>
       </div>
     </div>
+    
   </section>
+
+  <section class="blogs" id="blogs">
+    <div class="blog-img" >
+      <img id="blog-img" src="assets/images/blogs.jpg" alt="Service Preview" />
+    </div>
+    <div class="blog-text" >
+      <h6>Blog</h6>
+      <h1>Long Blog title related to company's ethics & values</h1>
+      <a href="#services" class="btn-secondary" >Learn More</a>
+    </div>
+  </section>
+
+  <section class="blogs" id="blogs">
+    
+    <div class="case-text" >
+      <h6>Case Study</h6>
+      <h1>Case Study showcasing understanding of company's projects</h1>
+      <a href="#services" class="btn-secondary" >Learn More</a>
+    </div>
+    <div class="blog-img" >
+      <img id="blog-img" src="assets/images/casestudy.jpeg" alt="Service Preview" />
+    </div>
+  </section>
+
+  <section class="testimonials">
+  <h2>What our Clients say about us</h2>
+  <div class="testimonials-inner">
+    <div class="swipe" onclick="prevTestimonial()">
+      <img src="assets/images/left.png" alt="Previous">
+    </div>
+
+    <div class="testimonial-card" id="testimonial-card">
+      <div class="client-details" >
+        <div class="client-img" >
+          <img id="testimonial-image" class="testimonial-img" src="" alt="Client Photo" />
+        </div>
+        <div class="client-info" >
+          <h4 id="testimonial-name"></h4>
+          <p id="testimonial-position"></p>
+          
+        </div>
+      </div>
+      
+      <p id="testimonial-text"></p>
+    
+    </div>
+
+    <div class="swipe" onclick="nextTestimonial()">
+      <img src="assets/images/right.png" alt="Next">
+    </div>
+  </div>
+</section>
+
+
 
   <footer class="footer">
     <p>&copy; 2025 Consulting Company. All rights reserved.</p>

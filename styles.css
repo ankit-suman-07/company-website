@@ -166,7 +166,7 @@ nav a:hover {
 }
 
 .btn-secondary {
-  margin-top: 100px;
+  margin: 40px 0;
   background: none;
   border: 2px solid var(--secondary);
   color: var(--secondary);
@@ -176,53 +176,118 @@ nav a:hover {
 }
 
 .what-we-bring {
-  border: 2px solid red;
-  min-height: 400px;
+  /* min-height: 400px; */
 }
 
-.labels {
+.what-we-bring-inner {
+  margin: 40px 150px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
 }
 
-.label {
+.what-we-bring-inner h2 {
+  margin: 40px;
+}
+
+.bring {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  /* justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; */
+}
+
+.bring-title {
   background: #fff;
   border: 1px solid #ddd;
-  padding: 1rem;
-  width: 150px;
+  /* padding: 1rem; */
+  min-width: 150px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.bring-title h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--secondary);
+  margin: 20px;
+  text-align: center;
+}
+
+.bring-title p {
+  margin: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
 }
 
 .services {
   /* padding: 2rem; */
   background: var(--gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-inner {
+  margin: 40px 150px 80px 150px;
+}
+
+.services-inner h2 {
+  margin: 40px;
+  text-align: center;
 }
 
 .services-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  /* display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 1rem;
+  margin-top: 1rem; */
 }
 
 .services-image {
-  flex: 1;
   min-width: 250px;
+  aspect-ratio: 1/1;
+  position: relative;
 }
 
 .services-image img {
   width: 100%;
-  height: auto;
-  border-radius: 5px;
+  height: 100%;
+  object-fit: cover; 
+  
 }
 
+.services-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  /* margin: 40px 0; */
+  background: none;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  
+  bottom: 20px;
+}
+
+
 .services-list {
-  flex: 1;
+  /* flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.5rem; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 .services-list button {
@@ -234,11 +299,140 @@ nav a:hover {
   transition: var(--transition);
 }
 
+
 .services-list button:hover {
   background: var(--secondary);
   color: #fff;
   border-color: var(--secondary);
 }
+
+.services-list button.active {
+  transform: scale(1.05); /* 10% larger */
+  background-color: #ddd;
+}
+
+.services-list button h4 {
+  font-weight: 400;
+  color: var(--secondary);
+}
+
+.services-list button p {
+  font-size: 12px;
+}
+
+.blogs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.blog-img {
+  height: 400px;
+}
+
+.blog-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.blog-text {
+  margin: 40px 150px 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.blog-text h6 {
+  font-weight: 800;
+}
+
+.blog-text h1 {
+  margin-right: 200px;
+  margin-top: 40px;
+}
+
+.case-text {
+  margin: 40px 40px 0 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.case-text h1 {
+  margin-left: 200px;
+  margin-top: 40px;
+  text-align: right;
+}
+
+.testimonials-inner {
+  border: 2px solid black;
+  margin: 40px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-card {
+  width: 500px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  min-height: 250px;
+}
+
+
+.swipe {
+  width: 50px;
+  height: 50px;
+}
+
+.swipe img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-details {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 10px;
+}
+
+.client-info {
+  text-align: left;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.client-img {
+  text-align: right;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#testimonial-text {
+  text-align: center;
+  margin: 20px;
+  font-style: italic;
+  font-size: 12px;
+  color: #555;
+}
+
 
 footer {
   text-align: center;
