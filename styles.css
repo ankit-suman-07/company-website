@@ -1,0 +1,249 @@
+/* styles.css */
+:root {
+  --primary: #121212;
+  --secondary: #f1356d;
+  --bg: #fff;
+  --gray: #f4f4f4;
+  --text: #222;
+  --margin: 150px;
+  --transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+section {
+  /* border: 2px solid black; */
+}
+
+
+.hero-sub  {
+  width: calc(100dvw/2);
+  margin: 0px;
+  height: 800px;
+  padding: 10px;
+}
+
+.hero-empty {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  
+}
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.hero-text-inner {
+  margin: 40px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.hero {
+  margin-top: 50px;
+  background: url('assets/images/hero.webp') no-repeat center center/cover;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* display: flex;
+  align-items: center;
+  justify-content: flex-start; */
+  /* padding: 0 3rem; */
+  /* position: relative; */
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header {
+  background-color: var(--primary);
+  width: 100dvw;
+  height: 100px;
+  /* padding: 1rem 2rem; */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+}
+
+.logo {
+  margin-left: var(--margin);
+  font-size: 48px;
+  font-weight: 600;
+}
+
+nav {
+  margin-right: var(--margin);
+  
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: var(--transition);
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+/* .hero {
+  display: flex;
+  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+} */
+
+.hero-text h1 {
+  font-size: 48px;
+  margin: 10px 0
+}
+
+.hero-text p {
+  font-size: 14px;
+  text-align: right;
+}
+
+
+.btn {
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  margin: 40px 150px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.services-intro {
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #222;
+}
+
+.services-intro-inner {
+  margin: 40px 150px;
+  
+  color: white;
+}
+
+.services-intro-inner p {
+  margin: 20px 0 40px 0;
+}
+
+.btn-secondary {
+  margin-top: 100px;
+  background: none;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.what-we-bring {
+  border: 2px solid red;
+  min-height: 400px;
+}
+
+.labels {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.label {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 150px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.services {
+  /* padding: 2rem; */
+  background: var(--gray);
+}
+
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.services-image {
+  flex: 1;
+  min-width: 250px;
+}
+
+.services-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.services-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.services-list button {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--primary);
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition);
+}
+
+.services-list button:hover {
+  background: var(--secondary);
+  color: #fff;
+  border-color: var(--secondary);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: #fff;
+  margin-top: 2rem;
+}
