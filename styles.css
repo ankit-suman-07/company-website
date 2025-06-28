@@ -79,11 +79,12 @@ section {
 }
 
 header {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
+  background-color: #222;
+  color: white;
   width: 100dvw;
   height: 100px;
   /* padding: 1rem 2rem; */
-  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
