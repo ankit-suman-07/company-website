@@ -225,7 +225,7 @@ nav a:hover {
 
 .services {
   /* padding: 2rem; */
-  background: var(--gray);
+  background: #222;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -252,6 +252,7 @@ nav a:hover {
 }
 
 .services-image {
+  border: 2px solid white;
   min-width: 250px;
   aspect-ratio: 1/1;
   position: relative;
@@ -323,6 +324,7 @@ nav a:hover {
 .blogs {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background-color: var(--gray);
 }
 
 .blog-img {
@@ -366,8 +368,16 @@ nav a:hover {
   text-align: right;
 }
 
+/* .testimonials {
+} */
+
+.testimonials h2{
+  text-align: center;
+  margin: 80px 0 40px 0;
+}
+
 .testimonials-inner {
-  border: 2px solid black;
+  min-height: 400px;
   margin: 40px 150px;
   display: flex;
   align-items: center;
@@ -433,11 +443,120 @@ nav a:hover {
   color: #555;
 }
 
+/* .our-clients {
+  border: 2px solid black;
+} */
 
+/* .our-clients-inner{
+  border: 2px solid black;
+} */
+
+.our-clients-inner h2 {
+  background-color: #222;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 40px 0;
+  color: white;
+}
+
+.our-clients-logos {
+  margin: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.clients-logo {
+  height: 150px;
+  width: 150px;
+  margin: 40px;
+}
+
+.clients-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 
 footer {
   text-align: center;
   padding: 1rem;
   background: var(--primary);
   color: #fff;
   margin-top: 2rem;
+} */
+
+.site-footer {
+  background-color: #1a1a1a;
+  color: #eee;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+  margin: 1rem;
+}
+
+.footer-column h4 {
+  margin: 20px 0 20px 0;
+  
+}
+
+.footer-column p {
+  margin: 10px 0 10px 0;
+  
+}
+
+.footer-logo {
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0 0 20px 0;
+}
+
+.footer-nav a {
+  display: block;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: #fff;
+}
+
+.footer-column h4 {
+  margin-bottom: 0.8rem;
+  color: #fff;
+}
+
+.social-links a img {
+  width: 36px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
 }
