@@ -1,0 +1,49 @@
+@media screen and (max-width: 1600px) {
+  .logo {
+    margin-left: 40px;
+  }
+  nav {
+    margin-right: 40px;
+  }
+
+}
+
+header {
+  /* background-color: var(--primary); */
+  background-color: var(--bg-color);
+  color: var(--bg-white);
+  width: 100dvw;
+  height: 100px;
+  /* padding: 1rem 2rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+}
+
+
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav a {
+  color: var(--bg-white);
+  text-decoration: none;
+  transition: var(--transition);
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+.nav-menu a.active-nav {
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  padding: 10px;
+}
