@@ -26,6 +26,11 @@ buttons.forEach((btn) => {
   });
 });
 
+// Trigger click on the first button to set default state
+if (buttons.length > 0) {
+  buttons[0].click();
+}
+
 const testimonials = [
   {
     image: "assets/images/profile.jpg",
