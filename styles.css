@@ -2,13 +2,86 @@
 :root {
   --primary: #121212;
   --secondary: #f1356d;
-  --bg: #fff;
+  --bg-color: #222;
+  --bg-white: #fff;
   --gray: #f4f4f4;
   --text: #222;
+  --text-grey: #555;
+  --text-light: #999;
+  --box-border: #ddd;
   --margin: 150px;
   --transition: all 0.3s ease;
   font-size: 16px;
+  background-color: var(--bg-color);
 }
+
+/* :root {
+  --primary: #2c2c54;
+  --secondary: #ff6b6b;
+  --bg-color: #f7f1e3;
+  --bg-white: #fff;
+  --gray: #dcdde1;
+  --text: #2f3640;
+  --text-grey: #718093;
+  --text-light: #a4b0be;
+  --box-border: #dcdde1;
+  --margin: 150px;
+  --transition: all 0.3s ease;
+  font-size: 16px;
+  background-color: var(--bg-color);
+} */
+
+/* :root {
+  --primary: #1e272e;
+  --secondary: #34ace0;
+  --bg-color: #f1f2f6;
+  --bg-white: #ffffff;
+  --gray: #dfe4ea;
+  --text: #2f3542;
+  --text-grey: #57606f;
+  --text-light: #ced6e0;
+  --box-border: #ced6e0;
+  --margin: 150px;
+  --transition: all 0.3s ease;
+  font-size: 16px;
+  background-color: var(--bg-color);
+} */
+
+/* :root {
+  --primary: #2e8b57;
+  --secondary: #a3cb38;
+  --bg-color: #f0fff0;
+  --bg-white: #ffffff;
+  --gray: #e8f5e9;
+  --text: #2d3436;
+  --text-grey: #636e72;
+  --text-light: #b2bec3;
+  --box-border: #dcdde1;
+  --margin: 150px;
+  --transition: all 0.3s ease;
+  font-size: 16px;
+  background-color: var(--bg-color);
+} */
+
+
+
+
+/* :root {
+  --primary: #121212;
+  --primary-dark: #0f0f0f;
+  --secondary: #f1356d;
+  --accent: #ff8a9e;
+  --bg-color: #222;
+  --bg-white: #fff;
+  --gray: #f4f4f4;
+  --text: #222;
+  --text-grey: #555;
+  --text-light: #999;
+  --box-border: #ddd;
+  --margin: clamp(1rem, 8vw, 150px);
+  --transition: all 0.3s ease;
+  font-size: 16px;
+} */
 
 * {
   margin: 0;
@@ -16,9 +89,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bg);
+  background-color: var(--bg-white);
   color: var(--text);
   line-height: 1.6;
 }
@@ -47,9 +124,9 @@ section {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0.5px);
+  backdrop-filter: blur(0.7px);
   -webkit-backdrop-filter: blur(3.3px);
 }
 
@@ -74,14 +151,14 @@ section {
   justify-content: flex-start; */
   /* padding: 0 3rem; */
   /* position: relative; */
-  color: white;
+  color: var(--bg-white);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 header {
   /* background-color: var(--primary); */
-  background-color: #222;
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--bg-white);
   width: 100dvw;
   height: 100px;
   /* padding: 1rem 2rem; */
@@ -111,7 +188,7 @@ nav ul {
 }
 
 nav a {
-  color: #fff;
+  color: var(--bg-white);
   text-decoration: none;
   transition: var(--transition);
   font-size: 16px;
@@ -143,9 +220,9 @@ nav a:hover {
 
 .btn {
   background-color: var(--secondary);
-  color: #fff;
+  color: var(--bg-white);
   padding: 0.5rem 1rem;
-  border: 2px solid white;
+  border: 2px solid var(--bg-white);
   margin: 40px 150px;
   cursor: pointer;
   text-decoration: none;
@@ -157,13 +234,13 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #222;
+  background: var(--bg-color);
 }
 
 .services-intro-inner {
   margin: 40px 150px;
   
-  color: white;
+  color: var(--bg-white);
 }
 
 .services-intro-inner p {
@@ -206,8 +283,8 @@ nav a:hover {
 }
 
 .bring-title {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--bg-white);
+  border: 1px solid var(--box-border);
   /* padding: 1rem; */
   min-width: 150px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
@@ -225,12 +302,12 @@ nav a:hover {
   margin: 20px;
   text-align: center;
   font-size: 14px;
-  color: #555;
+  color: var(--text-grey);
 }
 
 .services {
   /* padding: 2rem; */
-  background: #222;
+  background: var(--bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,7 +334,7 @@ nav a:hover {
 }
 
 .services-image {
-  border: 2px solid white;
+  border: 2px solid var(--bg-white);
   min-width: 250px;
   aspect-ratio: 1/1;
   position: relative;
@@ -299,7 +376,7 @@ nav a:hover {
 .services-list button {
   padding: 0.75rem 1rem;
   border: 1px solid var(--primary);
-  background: #fff;
+  background: var(--bg-white);
   cursor: pointer;
   text-align: left;
   transition: var(--transition);
@@ -308,13 +385,13 @@ nav a:hover {
 
 .services-list button:hover {
   background: var(--secondary);
-  color: #fff;
+  color: var(--bg-white);
   border-color: var(--secondary);
 }
 
 .services-list button.active {
   transform: scale(1.05); /* 10% larger */
-  background-color: #ddd;
+  background-color: var(--text-light);
 }
 
 .services-list button h4 {
@@ -392,7 +469,7 @@ nav a:hover {
 .testimonial-card {
   width: 500px;
   margin: 20px;
-  background-color: #fff;
+  background-color: var(--bg-white);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
@@ -445,7 +522,7 @@ nav a:hover {
   margin: 20px;
   font-style: italic;
   font-size: 12px;
-  color: #555;
+  color: var(--text-grey);
 }
 
 /* .our-clients {
@@ -457,13 +534,13 @@ nav a:hover {
 } */
 
 .our-clients-inner h2 {
-  background-color: #222;
+  background-color: var(--bg-color);
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 0 40px 0;
-  color: white;
+  color: var(--bg-white);
 }
 
 .our-clients-logos {
@@ -493,7 +570,7 @@ footer {
 } */
 
 .contact-form-section {
-  background-color: #f9f9f9;
+  background-color: var(--gray);
   padding: 4rem 2rem;
   text-align: center;
 }
@@ -517,7 +594,7 @@ footer {
 }
 
 .form-group label {
-  color: #f1356d;
+  color: var(--secondary);
   display: block;
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -531,12 +608,12 @@ footer {
   border: 1px solid #ccc;
   border-radius: 6px;
   resize: vertical;
-  background-color: #fff;
+  background-color: var(--bg-white);
 }
 
 .contact-form .btn-primary {
   background-color: var(--primary, #0077cc);
-  color: #fff;
+  color: var(--bg-white);
   padding: 0.75rem 2rem;
   border: none;
   border-radius: 6px;
@@ -551,8 +628,8 @@ footer {
 
 
 .site-footer {
-  background-color: #1a1a1a;
-  color: #eee;
+  background-color: var(--bg-color);
+  color: var(--box-border);
   padding: 2rem 1rem;
   font-size: 0.9rem;
 }
@@ -588,24 +665,24 @@ footer {
 
 .footer-nav a {
   display: block;
-  color: #ccc;
+  color: var(--box-border);
   margin-bottom: 0.5rem;
   text-decoration: none;
 }
 
 .footer-nav a:hover {
-  color: #fff;
+  color: var(--bg-white);
 }
 
 .footer-column h4 {
   margin-bottom: 0.8rem;
-  color: #fff;
+  color: var(--bg-white);
 }
 
 .social-links a img {
   width: 36px;
-  border: 2px solid white;
-  background-color: white;
+  border: 2px solid var(--bg-white);
+  background-color: var(--bg-white);
   border-radius: 50%;
   margin-right: 10px;
   transition: transform 0.2s ease;
@@ -621,5 +698,5 @@ footer {
   margin-top: 2rem;
   padding-top: 1rem;
   font-size: 0.85rem;
-  color: #aaa;
+  color: var(--box-border);
 }
