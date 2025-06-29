@@ -46,3 +46,36 @@ nav a:hover {
   border: 1px solid var(--secondary);
   padding: 10px;
 }
+
+.burger-menu {
+  /* border: 2px solid white; */
+  height: 40px;
+  width: 40px;
+  display: none;
+  cursor: pointer;
+  margin-right: var(--margin);
+}
+
+.burger-line {
+  border-radius: 3px;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* .burger-menu.active {
+  transform: translateX(20px);
+} */
+
+.burger-middle.active {
+  opacity: 0;
+}
+
+.burger-top.active {
+  transform: rotate(45deg) translateY(15px) translateX(10px);
+}
+
+.burger-bottom.active {
+  transform: rotate(-45deg) translateY(-15px) translateX(10px);
+}

@@ -91,3 +91,14 @@ window.onload = () => showTestimonial(current);
       link.classList.add('active-nav');
     }
   });
+
+const burger = document.querySelectorAll('.burger-menu');
+
+
+// Toggle active class on burger menu lines
+document.querySelector('.burger-menu').addEventListener('click', () => {
+  document.querySelector('.burger-menu').classList.toggle('active');
+  document.querySelectorAll('.burger-line').forEach(line => {
+    line.classList.toggle('active');
+  });
+});
