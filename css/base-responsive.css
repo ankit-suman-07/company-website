@@ -307,6 +307,33 @@
         margin: 10px;
     }
 
+    .testimonials h2{
+        margin: 40px 0;
+    }
+
+    .testimonials-inner {
+        margin: 10px;
+    }
+
+    .testimonial-card {
+        width: 300px;
+        margin: 10px;
+        min-height: 200px;
+    }
+
+    .swipe {
+        width: 30px;
+        height: 30px;
+    }
+
+    .client-details {
+        margin-top: 10px;
+    }
+
+    #testimonial-text {
+        margin: 10px;
+        font-size: 12px;
+    }
 
 } 
 

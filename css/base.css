@@ -443,6 +443,7 @@ section {
 }
 
 .client-details {
+  margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: 10px;
