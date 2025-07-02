@@ -1,73 +1,11 @@
-.site-footer {
-  background-color: var(--bg-color);
-  color: var(--box-border);
-  padding: 2rem 1rem;
-  font-size: 0.9rem;
+@media screen and (max-width: 1000px) {
+  .footer-container {
+    margin: 20px;
+  }
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.footer-column {
-  flex: 1 1 250px;
-  margin: 1rem;
-}
-
-.footer-column h4 {
-  margin: 20px 0 20px 0;
-  
-}
-
-.footer-column p {
-  margin: 10px 0 10px 0;
-  
-}
-
-.footer-logo {
-  font-weight: 600;
-  font-size: 32px;
-  margin: 0 0 20px 0;
-}
-
-.footer-nav a {
-  display: block;
-  color: var(--box-border);
-  margin-bottom: 0.5rem;
-  text-decoration: none;
-}
-
-.footer-nav a:hover {
-  color: var(--bg-white);
-}
-
-.footer-column h4 {
-  margin-bottom: 0.8rem;
-  color: var(--bg-white);
-}
-
-.social-links a img {
-  width: 36px;
-  border: 2px solid var(--bg-white);
-  background-color: var(--bg-white);
-  border-radius: 50%;
-  margin-right: 10px;
-  transition: transform 0.2s ease;
-}
-
-.social-links a:hover img {
-  transform: scale(1.1);
-}
-
-.footer-bottom {
-  text-align: center;
-  border-top: 1px solid #333;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  font-size: 0.85rem;
-  color: var(--box-border);
+@media screen and (max-width: 700px) {
+  .footer-container {
+    margin: 10px;
+  }
 }

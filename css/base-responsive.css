@@ -143,6 +143,16 @@
         margin: 20px 0 40px 0;
     }
 
+    .our-clients-logos {
+        margin: 0px;
+    }
+
+    .clients-logo {
+        /* height: 100px;
+        width: 100px; */
+        margin: 10px 10px 80px 10px;
+    }
+
 } 
 
 @media screen and (max-width: 800px) {
@@ -260,6 +270,14 @@
         margin: 20px;
         text-align: center;
         color: var(--bg-white);
+    }
+
+    .form-container {
+        margin: 10px;
+    }
+
+    .form-group label {
+        font-size: 12px;
     }
 }
 
