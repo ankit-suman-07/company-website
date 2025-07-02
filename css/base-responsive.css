@@ -165,7 +165,44 @@
         min-width: 50px;
     }
 
+    .services-inner {
+        margin: 10px 10px 40px 10px;
+    }
+    
+
 } 
+
+@media screen and (max-width: 700px) {
+    .services-wrapper {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .services-list {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .services-list button h4 {
+        text-align: center;
+        margin: 4px;
+    }
+
+    .services-list button {
+        padding: 0;
+    }
+
+
+    .services-list button p {
+        text-align: center;
+        margin: 4px;
+    }
+
+    .services-image {
+        max-width: 100%;
+    }
+}
 
 @media screen and (max-width: 600px) {
     
@@ -210,6 +247,7 @@
     .what-we-bring-inner {
         margin: 10px;
     }
+
 
 } 
 
