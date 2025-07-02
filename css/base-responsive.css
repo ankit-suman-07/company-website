@@ -1,4 +1,11 @@
 @media screen and (max-width: 1400px) {
+    .hero {
+        height: 600px;
+    }
+
+    .hero-sub {
+        height: 600px;
+    }
   .hero-text-inner {
     margin: 40px;
     margin-right: 40px;
@@ -8,6 +15,10 @@
     justify-content: flex-end; */
     }
 
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
     .btn {
         margin: 40px 40px;
         cursor: pointer;
@@ -15,11 +26,11 @@
     }
 
     .services-intro-inner {
-        margin: 40px 40px;
+        margin: 40px;
     }
 
     .what-we-bring-inner {
-        margin: 40px 150px;
+        margin: 40px;
     }
 
     .services-inner {
@@ -36,6 +47,11 @@
 
     .testimonials-inner {
         margin: 40px;
+    }
+
+    .clients-logo {
+        height: 100px;
+        width: 100px;
     }
 
 }
