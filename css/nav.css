@@ -17,11 +17,11 @@ header {
   margin-left: var(--margin);
   font-size: 48px;
   font-weight: 600;
+  z-index: 999;
 }
 
 nav {
   margin-right: var(--margin);
-  
 }
 
 nav ul {
