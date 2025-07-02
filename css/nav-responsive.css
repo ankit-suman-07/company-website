@@ -64,3 +64,14 @@
   }
 
 }
+
+
+@media screen and (max-width: 650px) {
+  .logo {
+    font-size: 36px;
+  }
+
+  .burger-menu {
+    margin-right: 10px;
+  }
+}
