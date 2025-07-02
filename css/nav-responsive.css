@@ -71,7 +71,28 @@
     font-size: 36px;
   }
 
+  .nav-menu {
+    height: 100dvh;
+  }
+
   .burger-menu {
     margin-right: 10px;
+    height: 30px;
+    width: 30px;
   }
+
+
+.burger-line {
+  border-radius: 2px;
+  height: 4px;
+}
+
+
+.burger-top.active {
+  transform: rotate(45deg) translateY(10px) translateX(10px);
+}
+
+.burger-bottom.active {
+  transform: rotate(-45deg) translateY(-10px) translateX(10px);
+}
 }
